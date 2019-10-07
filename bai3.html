@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+
+        let a = parseInt(prompt("Nhập số lượng cần hiện fibonacci "));
+        let fib = [];
+
+        fib[0] = 0;
+        fib[1] = 1;
+        for (i = 2; i <= a; i++) {
+            fib[i] = fib[i - 2] + fib[i - 1];
+            alert(fib[i]);
+        }
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

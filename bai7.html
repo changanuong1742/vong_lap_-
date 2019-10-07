@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+
+        let a = parseInt(prompt("Nhập số lượng cần đếm"));
+        for (let i=1; i<a; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                alert("FizzBuzz");
+            } else {
+                if (i % 5 == 0) {
+                    alert("Buzz");
+                } else {
+                    if (i % 3 == 0 ) {
+                        alert("Fizz");
+                    } else {
+                        alert(i);
+                    }
+                }
+            }
+        }
+
+
+
+    </script>
+
+
+
+
+</head>
+<body>
+
+</body>
+</html>
