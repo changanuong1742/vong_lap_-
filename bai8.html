@@ -6,28 +6,25 @@
 
     <script>
 
-        let a = parseInt(prompt("Nhập Số: "));
-        let x;
-        while (a<=10 ){
-            if(a== Math.random(x)*10) {
-                alert("Bán đoán đúng rồi ") + Math.random(x)*10;
-            }  else {
-            if(a<Math.random(x)*10){
-                alert("Bạn nhập nhỏ hơn số ngẫu nhiên " + Math.random(x)*10;
-            } else { if(a>Math.random(x)*10) {
-                alert("Bạn nhập lớn hơn số ngãu nhiên " + Math.random(x)*10;
+        function doan_so() {
+            let a = parseInt(prompt("Nhập 1-10"));
+            let r = Math.round(10 * Math.random());
+            if (a == r) {
+                alert("Bạn đã nhập đúng số ngẫu nhiên" + r);
+            } else {
+                alert("Phải nhập" + r);
             }
-            }
-            }
-        }
 
+        }
 
 
     </script>
 
-
 </head>
 <body>
+
+<h1> CHơi trò chơi</h1>
+<button id="play" onclick="doan_so()">Play</button>
 
 </body>
 </html>
